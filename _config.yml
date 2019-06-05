@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: zhaohui's blog
+subtitle: 
 description:
-author: John Doe
+author: zhaohui
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://one-zh.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -86,7 +86,8 @@ deploy:
 math:
   engine: 'mathjax' # or 'katex'
   mathjax:
-    src: custom_mathjax_source
+    # src: custom_mathjax_source
+    src: "//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     config:
       # MathJax config
   katex:
