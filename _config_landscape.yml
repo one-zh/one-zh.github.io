@@ -47,10 +47,10 @@ highlight:
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
-# index_generator:
-#   path: ''
-#   per_page: 10
-#   order_by: -date
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
   
 # Category & Tag
 default_category: uncategorized
@@ -72,31 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: polarbear
-
-# 在归档页面显示所有文章 （Show all articles on archive page.）
-# 需要安装(Need to install) hexo-generator-archive 插件支持
-archive_generator:
-    per_page: 0
-    yearly: false
-    monthly: false
-    daily: false 
-
-# widget function
-# false: disable
-# widget_custom: custom your widget
-#   title: your widget title
-#   content: Add your html code in here. Example: <p>testing...</p>
-widget:
-  Tags: true
-  Categories: true
-  Custom: false
-
-# widget_custom:
-#     title: Test
-#     content: <p>testing...</p>
-
-
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -106,6 +82,8 @@ deploy:
   branch: master
   email: onezh404@gmail.com
   name: one-zh
+
+# mathjax: true
 
 math:
   engine: 'mathjax' # or 'katex'
@@ -119,3 +97,24 @@ math:
     js: custom_js_source # not used
     config:
       KaTeX config
+
+# mathjax:
+#     enable: true
+
+
+# markdown_it_plus:
+#   highlight: true
+#   html: true
+#   xhtmlOut: true
+#   breaks: true
+#   langPrefix:
+#   linkify: true
+#   typographer:
+#   quotes: “”‘’
+#   plugins:
+#     - plugin:
+#         name: markdown-it-katex
+#         enable: true
+#     - plugin:
+#         name: markdown-it-mark
+#         enable: false
