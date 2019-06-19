@@ -255,10 +255,12 @@ l^*
         
   <div class="comments" id="comments">
     
+    <div id="gitalk-container"><div>
+    
   </div>
 
 
-      </footer>
+      </div></div></footer>
     
   </article>
 
@@ -286,6 +288,28 @@ l^*
     
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '96b2554e4976dd40fa21',
+          clientSecret: '22b24857fa55a347b2f8a33f5b58e049e2d6f96b',
+          repo: 'one-zh.github.io',
+          owner: 'one-zh',
+          admin: ['one-zh'],
+          id: location.pathname,
+          labels: ['Gitalk'],
+          perPage: 15,
+          pagerDirection: 'last',
+          createIssueManually: false,
+          distractionFreeMode: true
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
     
 
@@ -318,7 +342,7 @@ l^*
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<!-- End: Injected MathJax --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- End: Injected MathJax -->
 
 <!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
@@ -336,6 +360,6 @@ l^*
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-<!-- End: Injected MathJax -->
+<!-- End: Injected MathJax --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
